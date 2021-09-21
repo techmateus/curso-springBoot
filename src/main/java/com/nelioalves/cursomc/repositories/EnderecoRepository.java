@@ -3,9 +3,9 @@ package com.nelioalves.cursomc.repositories;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.nelioalves.cursomc.model.Categoria;
+import com.nelioalves.cursomc.model.Endereco;
 
 @Repository
-public interface CategoriaRepository extends JpaRepository<Categoria, Integer> {
+public interface EnderecoRepository extends JpaRepository<Endereco, Integer> {
 
 }

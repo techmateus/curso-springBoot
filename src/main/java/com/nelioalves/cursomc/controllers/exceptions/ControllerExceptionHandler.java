@@ -1,4 +1,4 @@
-package com.nelioalves.cursomc.resources.exceptions;
+package com.nelioalves.cursomc.controllers.exceptions;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import com.nelioalves.cursomc.services.exceptions.ObjectNotFoundException;
 
 @ControllerAdvice
-public class ResourceExceptionHandler {
+public class ControllerExceptionHandler {
 	
 	@ExceptionHandler(ObjectNotFoundException.class)
 	public ResponseEntity<StandardError> objectNotFound(ObjectNotFoundException e, HttpServletRequest request) {

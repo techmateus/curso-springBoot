@@ -1,16 +1,19 @@
-package com.nelioalves.cursomc.domain;
+package com.nelioalves.cursomc.model;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.ManyToMany;
+
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 @Entity
-public class Cidade implements Serializable {
+public class Categoria implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	@Id
@@ -18,18 +21,17 @@ public class Cidade implements Serializable {
 	private Integer id;
 	private String nome;
 	
-	@ManyToOne
-	@JoinColumn(name="estado_id")
-	private Estado estado;
+	@JsonManagedReference
+	@ManyToMany(mappedBy = "categorias")
+	private List<Produto> produtos = new ArrayList<>();
 	
-	public Cidade() {
+	public Categoria() {
 	}
-
-	public Cidade(Integer id, String nome, Estado estado) {
+	
+	public Categoria(Integer id, String nome) {
 		super();
 		this.id = id;
 		this.nome = nome;
-		this.estado = estado;
 	}
 
 	public Integer getId() {
@@ -47,15 +49,15 @@ public class Cidade implements Serializable {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
-	public Estado getEstado() {
-		return estado;
+	
+	public List<Produto> getProdutos() {
+		return produtos;
 	}
 
-	public void setEstado(Estado estado) {
-		this.estado = estado;
+	public void setProdutos(List<Produto> produtos) {
+		this.produtos = produtos;
 	}
-
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -72,7 +74,7 @@ public class Cidade implements Serializable {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Cidade other = (Cidade) obj;
+		Categoria other = (Categoria) obj;
 		if (id == null) {
 			if (other.id != null)
 				return false;

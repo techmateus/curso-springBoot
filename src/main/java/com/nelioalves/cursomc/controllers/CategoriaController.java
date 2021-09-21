@@ -1,4 +1,4 @@
-package com.nelioalves.cursomc.resources;
+package com.nelioalves.cursomc.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.nelioalves.cursomc.domain.Categoria;
+import com.nelioalves.cursomc.model.Categoria;
 import com.nelioalves.cursomc.services.CategoriaService;
 
 @RestController
 @RequestMapping(value="/categorias")
-public class CategoriaResource {
+public class CategoriaController {
 	
 	@Autowired
 	private CategoriaService service;
