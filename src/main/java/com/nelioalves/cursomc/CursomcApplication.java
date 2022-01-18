@@ -21,15 +21,15 @@ import com.nelioalves.cursomc.model.Pedido;
 import com.nelioalves.cursomc.model.Produto;
 import com.nelioalves.cursomc.model.enums.EstadoPagamento;
 import com.nelioalves.cursomc.model.enums.TipoCliente;
-import com.nelioalves.cursomc.repositories.CategoriaRepository;
-import com.nelioalves.cursomc.repositories.CidadeRepository;
-import com.nelioalves.cursomc.repositories.ClienteRepository;
-import com.nelioalves.cursomc.repositories.EnderecoRepository;
-import com.nelioalves.cursomc.repositories.EstadoRepository;
-import com.nelioalves.cursomc.repositories.ItemPedidoRepository;
-import com.nelioalves.cursomc.repositories.PagamentoRepository;
-import com.nelioalves.cursomc.repositories.PedidoRepository;
-import com.nelioalves.cursomc.repositories.ProdutoRepository;
+import com.nelioalves.cursomc.repository.CategoriaRepository;
+import com.nelioalves.cursomc.repository.CidadeRepository;
+import com.nelioalves.cursomc.repository.ClienteRepository;
+import com.nelioalves.cursomc.repository.EnderecoRepository;
+import com.nelioalves.cursomc.repository.EstadoRepository;
+import com.nelioalves.cursomc.repository.ItemPedidoRepository;
+import com.nelioalves.cursomc.repository.PagamentoRepository;
+import com.nelioalves.cursomc.repository.PedidoRepository;
+import com.nelioalves.cursomc.repository.ProdutoRepository;
 
 @SpringBootApplication
 public class CursomcApplication implements CommandLineRunner {

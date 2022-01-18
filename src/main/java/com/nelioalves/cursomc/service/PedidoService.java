@@ -1,4 +1,4 @@
-package com.nelioalves.cursomc.services;
+package com.nelioalves.cursomc.service;
 
 import java.util.Optional;
 
@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.nelioalves.cursomc.model.Pedido;
-import com.nelioalves.cursomc.repositories.PedidoRepository;
-import com.nelioalves.cursomc.services.exceptions.ObjectNotFoundException;
+import com.nelioalves.cursomc.repository.PedidoRepository;
+import com.nelioalves.cursomc.service.exception.ObjectNotFoundException;
 
 @Service
 public class PedidoService {

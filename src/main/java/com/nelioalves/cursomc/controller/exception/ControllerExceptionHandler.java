@@ -1,4 +1,4 @@
-package com.nelioalves.cursomc.controllers.exceptions;
+package com.nelioalves.cursomc.controller.exception;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -9,8 +9,8 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-import com.nelioalves.cursomc.services.exceptions.DataIntegrityException;
-import com.nelioalves.cursomc.services.exceptions.ObjectNotFoundException;
+import com.nelioalves.cursomc.service.exception.DataIntegrityException;
+import com.nelioalves.cursomc.service.exception.ObjectNotFoundException;
 
 @ControllerAdvice
 public class ControllerExceptionHandler {

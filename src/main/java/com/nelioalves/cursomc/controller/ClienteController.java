@@ -1,4 +1,4 @@
-package com.nelioalves.cursomc.controllers;
+package com.nelioalves.cursomc.controller;
 
 import java.net.URI;
 import java.util.List;
@@ -15,7 +15,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import com.nelioalves.cursomc.dto.ClienteDTO;
 import com.nelioalves.cursomc.dto.ClienteNewDTO;
 import com.nelioalves.cursomc.model.Cliente;
-import com.nelioalves.cursomc.services.ClienteService;
+import com.nelioalves.cursomc.service.ClienteService;
 
 @RestController
 @RequestMapping(value="/clientes")

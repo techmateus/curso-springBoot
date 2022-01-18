@@ -1,4 +1,4 @@
-package com.nelioalves.cursomc.services;
+package com.nelioalves.cursomc.service;
 
 import java.util.List;
 import java.util.Optional;
@@ -16,10 +16,10 @@ import com.nelioalves.cursomc.model.Cidade;
 import com.nelioalves.cursomc.model.Cliente;
 import com.nelioalves.cursomc.model.Endereco;
 import com.nelioalves.cursomc.model.enums.TipoCliente;
-import com.nelioalves.cursomc.repositories.ClienteRepository;
-import com.nelioalves.cursomc.repositories.EnderecoRepository;
-import com.nelioalves.cursomc.services.exceptions.DataIntegrityException;
-import com.nelioalves.cursomc.services.exceptions.ObjectNotFoundException;
+import com.nelioalves.cursomc.repository.ClienteRepository;
+import com.nelioalves.cursomc.repository.EnderecoRepository;
+import com.nelioalves.cursomc.service.exception.DataIntegrityException;
+import com.nelioalves.cursomc.service.exception.ObjectNotFoundException;
 
 @Service
 public class ClienteService {

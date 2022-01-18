@@ -1,11 +1,11 @@
-package com.nelioalves.cursomc.controllers;
+package com.nelioalves.cursomc.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import com.nelioalves.cursomc.model.Pedido;
-import com.nelioalves.cursomc.services.PedidoService;
+import com.nelioalves.cursomc.service.PedidoService;
 
 @RestController
 @RequestMapping(value="/pedido")

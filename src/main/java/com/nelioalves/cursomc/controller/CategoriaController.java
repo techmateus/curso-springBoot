@@ -1,4 +1,4 @@
-package com.nelioalves.cursomc.controllers;
+package com.nelioalves.cursomc.controller;
 
 import java.net.URI;
 import java.util.List;
@@ -14,7 +14,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.nelioalves.cursomc.dto.CategoriaDTO;
 import com.nelioalves.cursomc.model.Categoria;
-import com.nelioalves.cursomc.services.CategoriaService;
+import com.nelioalves.cursomc.service.CategoriaService;
 
 @RestController
 @RequestMapping(value="/categorias")
